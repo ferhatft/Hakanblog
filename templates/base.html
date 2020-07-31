@@ -1,0 +1,232 @@
+{% load analytical %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    {% analytical_head_top %}
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Hakan Tak</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/web_üst_logo.jpeg2000' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/footercss/style.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles2.css' %}" rel="stylesheet" />
+
+
+    {% analytical_head_bottom %}
+</head>
+
+<body id="page-top">
+    {% analytical_body_top %}
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+
+            <a class="navbar-brand js-scroll-trigger justify-content-center" href="{% url 'index'  %}"><img
+                    src="{% static 'assets/img/HAKAN_TAK-logo.jpeg2000' %}" alt="" /></a>
+
+
+            <!-- <a class="navbar-toggler navbar-brand js-scroll-trigger" href="{% url 'contact'  %}">Hemen Bİlgİ Al</a>-->
+
+
+
+            <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="fas fa-bars fa-2x"></i>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto pt-2 mr-4">
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Product</a></li>-->
+
+                    <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Hakkımda</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index'  %}">ANASAYFA</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'about'  %}">HAKKIMDA</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'sorular'  %}">SSS</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'contact'  %}">İLETİŞİM</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'blog' %}">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="https://www.remax.com.tr/gayrimenkul-danisman-girisimci/c656/hakan-tak"
+                            target="_blank">emlaklarımız
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+
+                <div class="row ml-1">
+                    <a class="navbar-brand js-scroll-trigger " href="{% url 'index'  %}"><img style="height:2.2rem;"
+                            src="{% static 'assets/img/remax.png' %}" alt="" /></a>
+                </div>
+            </div>
+
+
+
+
+    </nav>
+
+    {% block body %}
+
+
+    {% endblock body %}
+
+
+
+
+
+
+
+    <!--The div element for the map -->
+
+
+    <!-- Footer-->
+
+    <!-- Contact-->
+    <section class="contact-section bg-black ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Adres</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">Nisbetiye Mahallesi Aytar Caddesi No: 29/A Levent /
+                                Beşiktaş / İSTANBUL / TÜRKİYE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a class="text-black-50"
+                                    href="#!">emlakfikirleri@gmail.com</a></div>
+
+                            <div class="small text-black-50"><a class="text-black-50" href="#!">
+                                    tak.hakan@gmail.com
+                                </a></div>
+                            <div class="small text-black-50"><a class="text-black-50" href="#!">
+                                    hakantak@remaxguide.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Telefon numarası</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">+90 532 317 4780</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--harita-->
+    <section class="contact-section bg-black ">
+
+        <div class="col-md-4 offset-md-4">
+            <div class="">
+                <div class="container bg-black">
+                    <div class="text-center">
+                        <p class="gold">Konumumuz</p>
+                    </div>
+                    <div class="mb-3 ">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3007.6955182377365!2d29.0172653!3d41.0756478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6419a92c36b%3A0x4ab89ecc82c408e7!2sRE%2FMAX%20GUIDE!5e0!3m2!1str!2str!4v1596041327096!5m2!1str!2str"
+                            width="100%" height="150px" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="text-center">
+                        <p><a target="_blank"
+                                href="https://www.google.com.tr/maps/place/RE%2FMAX+GUIDE/@41.0756478,29.0172653,17z/data=!4m12!1m6!3m5!1s0x14cab6419a92c36b:0x4ab89ecc82c408e7!2sRE%2FMAX+GUIDE!8m2!3d41.0756438!4d29.019454!3m4!1s0x14cab6419a92c36b:0x4ab89ecc82c408e7!8m2!3d41.0756438!4d29.019454">Yol
+                                Tarifi</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">© Copyright 2020 HakanTak <a href="">Oref tasarım</a> </div>
+                <div class="col-lg-4 my-3 my-lg-0 container">
+                    <a class="mx-2 icon" href="https://twitter.com/hkntak" target="_blank"><i
+                            class="fab fa-twitter fa-2x"></i></a>
+                    <a class="mx-2 icon" href="https://www.facebook.com/hakantakemlak/" target="_blank"><i
+                            class="fab fa-facebook-f fa-2x"></i></a>
+                    <a class="mx-2 icon" href="https://www.linkedin.com/in/hakan-tak-0a699742/" target="_blank"><i
+                            class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a class="mx-2 icon" href="https://wa.me/905323174780" target="_blank"><i
+                            class="fab fa-whatsapp fa-2x"></i></a>
+                    <a class="mx-2 icon" href="https://www.instagram.com/hkntak/?hl=tr" target="_blank"><i
+                            class="fab fa-instagram fa-2x"></i></a>
+                    <a class="mx-2 icon"
+                        href="https://www.youtube.com/channel/UCzQgjVoNs6cMvw_4O5TIKOg?view_as=subscriber"
+                        target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <a class="mr-3" href="#!">Gizlilik Politikası</a>
+                    <a href="#!">Kullanıcı Sözleşmesi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+
+
+
+    <!--hakkımda-->
+
+    <script src="{% static 'assets/vendor/jquery/jquery.min.js' %} "></script>
+
+    <script src="{% static 'assets/vendor/typed/typed.js' %}"></script>
+
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+    {% analytical_body_bottom %}
+</body>
+
+
+
+</html>

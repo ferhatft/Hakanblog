@@ -1,0 +1,724 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+<div class="fixed-bottom navbar-expand-lg navbar-dark">
+    <div class="d-flex justify-content-center ">
+
+        <a class="btn btn-secondary button navbar-toggler  btn-xl text-uppercase js-scroll-trigger pl-10 pr-10"
+            href="{% url 'contact'  %}">Hemen Bİlgİ Al</a>
+        </a>
+    </div>
+</div>
+
+
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-heading ">Başarı Bilgi İster</div>
+        <div class="masthead-subheading"> Doğru yatırım için soru sorun ve öğrenmekten çekinmeyin</div>
+
+
+        <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal" href="#contact">Hemen
+            İletişim Kur </a>
+    </div>
+</header>
+<!-- Portfolio Grid-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container mt-3">
+        <div class="text-center mb-3 mt-1">
+            <h2 class="section-heading text-uppercase">SıkÇa sorulan sorular</h2>
+            <h3 class="section-subheading text-muted">Siz de merak ettiklerinizi sorabilirsiniz...</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading"></div>
+                            <div class="portfolio-caption-subheading text-muted">Emlak Nedir ve Nasıl Tanımlarız? </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading"> </div>
+                            <div class="portfolio-caption-subheading text-muted">Arazi, Tarla, Arsa Tanımları Nedir?
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading"> </div>
+                            <div class="portfolio-caption-subheading text-muted">Kadastro Terimleri Nelerdir? </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted"> Kat Mülkiyeti Nedir?</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted">Kat İrtifakı Nedir? </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search"></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted">
+                                İskan Nedir?
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted">İzale-i Şuyu Nedir? </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted">Şufa Hakkı Nedir? </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-search "></i></div>
+                        </div>
+
+
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted">Gayrimenkul Değerlemesi (Ekspertiz)
+                                Nedir? </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Portfolio Modals-->
+<!-- Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Emlak Nedir ve Nasıl Tanımlarız?</h3>
+                            <p class="item-intro text-muted">Emlak, arazi üzerinde bulunan her türlü yapılaşmanın
+                                bütününe denir. </p>
+
+                            <p>Emlak diğer bir adıyla gayrimenkul olarak anılmaktadır. Ev, arsa, bağ, bahçe, bina vb.
+                                imarlı, imarsız araziler ve bunların üzerlerindeki tamamlanmamış veya tamamlanmış her
+                                türden yapıların kat mülkiyeti ve tapu kaydına konu taşınmazlardır. Günümüzde emlak,
+                                gayrimenkul ve taşınmaz mallar olarak ifade edilmektedir. Yeryüzündeki arazilerin tümünü
+                                ve üstündeki yapıları kapsamaktadır.</p>
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5 ">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Arazi, Tarla, Arsa Tanımları Nedir?</h3>
+                            <p class="item-intro text-muted">Yerleşim alanları ve yapılmış yolların dışında kalan tüm
+                                toprak parçalarına arazi denir.</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
+                            <p>Islah planlarıyla arazi vasfından çıkmış belirli metrekare üzerine ayrılmış toprak
+                                parçalarına veya belediye mücavir alan sınırları ve köy yerleşik alanlarında yapılan
+                                planlarla yapılaşma sahası olarak ayrılan arazilere arsa denir. Ada numaraları 101 den
+                                başlayan imar alanı içindeki tüm parselleri ölçülünceye kadar numaraları aralıksız
+                                birbirini izleyen ve üzerine yapı kurmak üzere ayrılmış alanlardır. Tüm alt yapısı (yol,
+                                elektrik, su, telefon, kanalizasyon vb. gerekli) ve teknik gereksinimleri giderilmiş
+                                imar parseli olarak da tanımlanabilir. Aynı özelliklerde parsellenmemiş imar adaları da
+                                asra sayılır.</p>
+                            <p>Arsa içinde yapı yapılmasına izin verilen yaşam alanlarına örnek olarak ev, okul, cami,
+                                fabrika, otopark, otel, benzin istasyonu, plaza, yeşil alanlar vb. yapılar
+                                gösterilebilir. </p>
+
+                            <h4>Tarla, arazi ve arsa arasındaki farklar nedir? </h4>
+                            <p>Arazi; imar uygulaması geçmeyen toprak parçasına denir.</p>
+                            <p>Arsa; İmar uygulaması olan ve üstüne yapı (bina) yapılabilen, tarım yapılmayan, belli bir
+                                metrekarede parsellenmiş aynı zamanda belediye sınırları içinde kalan toprak parçası
+                                olarak ifade edilir</p>
+                            <p>Tarla; üzerinde tarım yapılabilen imar uygulamasına kapalı toprak parçasına denir.</p>
+                            <p>Yerleşim alanlarının dışına yapılan plan neticesinde sanayi ve spor alanları vb. alanlar
+                                yapılabilmektedir. Bu alanların paralelinde taşıt ve insanların rahat ulaşımını sağlayan
+                                yollar vardır. Hem ticari hem tarım yönünde kullanılan bu yolların paralelindeki
+                                alanlarda biçimi ve durumu ile alan dışında yer alan toprak parçaları yani araziler
+                                kendi içlerinde çeşitli özelliklerde karşımıza çıkar. Bu arazileri kumlu, verimli, kıraç
+                                ve sulak araziler olarak nitelendiririz. Farklı yapıya sahip arazilerin vergi matrahları
+                                da farklıdır ve arazinin değerine göre değişkenlik göstermektedir. </p>
+                            <p>Araziler (tarlalar) özelliklerine göre bir plan dâhilinde yerleşime açılabilir. ( sanayi
+                                alanı, köprü, toplu konut, havaalanı, liman, gar, yol vb. örnekler olabilir. ) Bölgenin
+                                ihtiyaç duyduğu koşullar göz önüne alınarak nazım imar planı doğrultusunda işlem
+                                yapılır.</p>
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5 ">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Kadastro Terimleri Nelerdir?</h3>
+                            <p>Pafta, ada, parsel (imar ve kadastro parseli), parselasyon, aplikasyon, çap (imar ve
+                                kadastro çapı), röper, siyah kot, kırmızı kot, plankote, röperli kroki, nivelman,
+                                rölöve, vaziyet planı, poligon, rölöve projesi, arka bahçe mesafesi, yapı yaklaştırma
+                                sınırı, taban alanı, kat yüksekliği, taban alan kat sayısı (TAKS ), inşaat alan kat
+                                sayısı (KAKS, EMSAL), bina cephesi, parsel cephesi, bina derinliği, parsel derinliği,
+                                kroki.</p>
+                            <p>Unutmayın ki yapınızda iskan var ama kat mülkiyeti yoksa sahip olduğunuz daire ya da iş
+                                yerinin size ait olduğunu belirtecek güncel ve resmi bir belgeye sahip olmadığınızdan
+                                dolayı yasal bir zorunluluk yerine getirilmemiş sayılmaktadır.</p>
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Kat Mülkiyeti Nedir?</h3>
+                            <p>Kat mülkiyeti, inşası tamamlanmış bir yapıda size ait olan gayrimenkulün resmi bir
+                                belgeyle belirtilmesine denir. Dairenin veya iş yerinin yasal bölümlerini ve ne şekilde
+                                sahip olduğunuzu belirleyen kanuni bir tanımlamadır. Kat mülkiyeti tapuya sahip bir
+                                gayrimenkulün yasal olarak da iskan problemi olmadığını ve inşaatının kanunlar
+                                çerçevesinde tamamlandığını anlayabiliriz.</p>
+                            <p>Unutmayın ki yapınızda iskan var ama kat mülkiyeti yoksa sahip olduğunuz daire ya da iş
+                                yerinin size ait olduğunu belirtecek güncel ve resmi bir belgeye sahip olmadığınızdan
+                                dolayı yasal bir zorunluluk yerine getirilmemiş sayılmaktadır.</p>
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 4-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Kat İrtifakı Nedir?</h3>
+                            <p>Bir tapu çeşidi olan kat irtifakı, yapı projesi çizimi ilgili resmi kurumlar tarafınca
+                                onaylandığında ya da onaylanmış projeye sahip yapım aşamasında olan bir binada hak
+                                sahibi olduğunuzu belirten belgedir. (Örnek olarak projesi çizilmiş ve ilgili resmi
+                                kurumlardan onay almış ve bu doğrultuda inşaatına başlanmış bir binadan daire almak
+                                istiyorsunuz. Bu alımda size direkt olarak daire tapusu verilmez. Bunun yerine arsa
+                                üzerinde, hak sahibi olduğunuzu belgeleyen belirli bir pay verilir. Bu payı belirten
+                                resmi belge kat irtifakıdır.
+
+                            </p>
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 5-->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">İskan Nedir?</h3>
+                            <p>Tamamlanmış bir inşaatın ilgili belediyelerin denetimi ile başta sunulan ve onaylanan
+                                projesine uygun olduğunu tescilleyen belgeye iskan diğer adıyla yapı kullanım izin
+                                belgesi denir. İskan olmayan yapılara mesken elektrik ve su abonelikleri alınamaz ancak
+                                şantiye aboneliği kullanabilir. İskan alabilmek için yapıda (binada) kat irtifakı
+                                kurulmuş olması gerekmektedir.</p>
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 6-->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">İzale-i Şuyu Nedir?</h3>
+                            <p>Bir taşınmaza (ev, konut, bina, işyeri, arsa, arazi, vb.) ortak hissedarların haklarının
+                                hisse oranları doğrultusunda aynen taksim edilmesi veya ilgili kurum tarafından
+                                satılarak hisse değerleri kadar bedellerinin hissedarlar (ortaklar) arasında
+                                paylaşılmasına izale-i şuyu denir. Temel amacı ortaklar (hissedarlar) arasında çıkan
+                                anlaşmazlıkların giderilmesi için mahkeme yolu ile ortaklığın giderilmesidir. Söz konusu
+                                taşınmaz bölünebilir niteliğe sahip ise aynen paylaştırılmasına, aksi bir durumdaysa
+                                açık arttırma yolu ile satılmasına karar verilir.
+
+                            </p>
+
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Şufa Hakkı Nedir?</h3>
+                            <p>Şufa Hakkı, tapu sicili işlemlerinde kullanılan ve önalım hakkı olarak da adlandırılan
+                                bir terimdir. Paylı (Hisseli) mülkiyete konu olan taşınmazlarla ilgili olup mülkiyette
+                                herhangi bir hissedarın, hissedar olmayan kişiye karşı, öncelikli satın alma hakkını
+                                belirtmektedir. </p>
+                            <h6>Pe ki süresi ne kadardır? </h6>
+                            <p>Önalım hakkı, satışın önalım sahibine bildirildiği tarihin üzerinden 3 ay ve her hâlde
+                                satışın üzerinden 2 yıl geçmesiyle düşer. Buna göre kendisine noter aracılığı ile
+                                bildirimde bulunulmaması durumunda, hissedar önalım hakkını 2 sene içinde de
+                                kullanabilir.</p>
+                            <h6>Hangi hallerde önalım hakkı kullanılamaz?</h6>
+                            <p>Paydaşlardan birinin payının, icra yoluyla satış ve ihalesinde, önalım hakkı
+                                kullanılamaz. Paydaşlardan birinin payını hibe etmesi ya da takas etmesi halinde de
+                                önalım hakkı kullanılamaz.</p>
+
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}"
+                    alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body mt-5 ">
+                            <!-- Project Details Go Here-->
+                            <h3 class="text-uppercase mt5 mb-3">Gayrimenkul Değerlemesi (Ekspertiz) Nedir?</h3>
+                            <p>Bir gayrimenkulün (Arsa, konut, yapı, villa, işyeri, bina, fabrika vb.) projesini, bağlı
+                                haklarını, faydalarını, fiziki durumu ve çevresinde ki emsallerinde tespit edilmesiyle
+                                konu gayrimenkule uzman tarafından tarafsız ve bağımsız değer biçilmesine yönelik
+                                çalışmadır.</p>
+                            <p>Değerleme çalışması genelde, maliyet yaklaşımı, emsal karşılaştırma ve gelir indirgeme
+                                yaklaşımı (kapitalizasyön) çalışmalarıyla 3 modern değerleme metodu olarak esas alınır.
+                            </p>
+                            <p>Gayrimenkul değerlemesi resmi kurumlardan alınmış bilgilerinde eklenmesiyle hazırlanan ve
+                                bir rapor olarak talep edene sunulan belgelerden oluşmaktadır.</p>
+                            <p>Adil bir satış için gerekli koşulların sağlanmasına olanak sağlayan gayrimenkul
+                                değerlemesi, iki tarafın çıkarlarının zorlanma altında olmadığının varsayımıyla konu
+                                gayrimenkulün nakit piyasa değerinin tespitini sağlamaktadır.</p>
+
+                            <ul class="list-inline">
+                                <li class="display-4 lead">Hakan Tak</li>
+                                <li class="display-8 lead">Yatırım Uzmanı</li>
+                                <li class="display-8 lead">Farklı sorularınız için <a
+                                        href="{% url 'contact'  %}">iletişime</a> geçin</li>
+
+                            </ul>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                KAPAT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Portfolio Modals-->
+<!-- Modal 1-->
+<div class="portfolio-modal modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <section class="page-section" id="contact">
+                <div class="container">
+                    <div class="close-modal" data-dismiss="modal"><img style="height: 100%;"
+                            src="{% static 'assets/img/exit.jpeg2000' %}" alt="Close modal" />
+                    </div>
+                    <!-- Contact Section Heading-->
+                    <p class="section-heading text-light">Hakan Tak</p>
+                    <h3 class="section-subheading text-light">Sorunuz var mı? Sizden duymak isteriz. </h3>
+                    <h2 class="section-heading text-uppercase">Bİze Yazın</h2>
+                    <h3 class="section-subheading text-light">Siz bir mesaj gönderin hemen iletişime geçelim. </h3>
+                    <!-- Contact Section Form-->
+
+
+                    <div class="container mb-5">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-10 ">
+
+                                <div class="row">
+                                    <div class="mx-auto">
+                                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+
+
+                                        <form method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+                                            {% csrf_token %}
+
+                                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                                {{form.name}}
+
+                                                <label for="{{ form.name.label }}">İsim</label>
+
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                                {{form.phone}}
+                                                <label for="{{ form.phone.label }}">Telefon Numarası</label>
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                                {{form.email}}
+                                                <label for="{{ form.email.label }}">Email Addresi</label>
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                            <div class="form-group floating-label-form-group controls mb-0 h-50">
+                                                {{form.subject}}
+                                                <label>Subject</label>
+
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+
+                                            <div class="form-group floating-label-form-group controls mb-0 h-80 ">
+
+                                                {{form.message}}
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+
+                                            <br />
+                                            <div id="success"></div>
+                                            <div class="form-group"><button class="btn btn-primary "
+                                                    id="sendMessageButton" type="submit">Formu Gönder</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-10 mt-10">
+                                <div class="container">
+                                    <div class="text-center">
+
+                                        <p class="section-heading ">TELEFON : +90 532 317 4780</p>
+
+                                        <h3 class="section-subheading text-light">ADRES : Nisbetiye Mahallesi Aytar
+                                            Caddesi No: 29/A Levent / Beşiktaş / İSTANBUL / TÜRKİYE</h3>
+
+                                        <div class="row align-items-center">
+                                            <div class="container">
+                                                <a class="mx-2 icon" href="https://twitter.com/hkntak"
+                                                    target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                                <a class="mx-2 icon" href="https://www.facebook.com/hakantakemlak/"
+                                                    target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                                                <a class="mx-2 icon"
+                                                    href="https://www.linkedin.com/in/hakan-tak-0a699742/"
+                                                    target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                                                <a class="mx-2 icon" href="https://wa.me/905323174780"
+                                                    target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                                <a class="mx-2 icon" href="https://www.instagram.com/hkntak/?hl=tr"
+                                                    target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                                <a class="mx-2 icon"
+                                                    href="https://www.youtube.com/channel/UCzQgjVoNs6cMvw_4O5TIKOg?view_as=subscriber"
+                                                    target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-lg-9 col-md-10 mx-auto">
+                                <div class="post-preview">
+                                    <div class="d-md-block">
+                                        <h2 class="display-4"></h2>
+
+
+                                        <div class="form-group">
+
+                                            <button class="btn btn-primary " data-dismiss="modal" type="button">
+                                                <i class="fas fa-times mr-1"></i>
+                                                KAPAT
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

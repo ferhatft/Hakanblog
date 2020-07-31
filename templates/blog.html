@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="fixed-bottom navbar-expand-lg navbar-dark">
+        <div class="d-flex justify-content-center ">
+
+            <a class="btn btn-secondary button navbar-toggler  btn-xl text-uppercase js-scroll-trigger pl-10 pr-10"
+                href="{% url 'contact'  %}">Hemen Bİlgİ Al</a>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url(../static/assets/img/blog-post-2.jpg)">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1> Blog</h1>
+                        <span class="subheading">Bilgi Değer Katar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+
+
+    {% if  articles%}
+    {% for article in articles  %}
+    <div class="container mb-5 pb-5">
+        <div class="row">
+            <div class="col-lg-9 col-md-10 mx-auto">
+                <div class="post-preview">
+                    <a href="{% url 'detail' article.id %}">
+                        <h2 class="post-title">
+                            {{article.title}}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{article.content|safe|truncatewords:10}}
+                        </h3>
+
+                        <hr>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-10 ">
+                {% if  article.article_image %}
+                <a href="{% url 'detail' article.id %}"><img class="img-fluid rounded"
+                        src="{{article.article_image.url}}" alt=""></a>
+
+
+                {% endif %}
+            </div>
+
+            <div class="col-lg-5 col-md-10 ">
+                <p class="post-meta">
+                    {{article.author}} tarafından {{article.created_date}} tarihinde eklendi</p>
+
+                <a style="float: right ;" class="btn btn-secondary  btn-xl text-uppercase js-scroll-trigger mb-2"
+                    href="{% url 'detail' article.id %}">Devamını oku</a>
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="alert alert-danger">
+        Bu makalede her hangi bir makale bulunmuyor
+
+    </div>
+    {% endif %}
+
+
+
+
+
+
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/clean-blog.min.js '%}"></script>
+
+
+
+</body>
+
+</html>
+
+{% endblock body %}

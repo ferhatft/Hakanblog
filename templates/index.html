@@ -1,0 +1,690 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<div class="fixed-bottom navbar-expand-lg navbar-dark">
+    <div class="d-flex justify-content-center ">
+
+        <a 
+            class="btn btn-secondary button navbar-toggler  btn-xl text-uppercase js-scroll-trigger pl-10 pr-10"
+            href="{% url 'contact'  %}">Hemen Bİlgİ Al</a>
+        </a>
+    </div>
+</div>
+
+
+<style>
+    .carousel-item {
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+
+<header class="masthead3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner " role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+
+            <div class="carousel-item active"
+                style="background-image: url(../static/assets/img/header/istanbul-2369949.jpeg2000)">
+                <div class="carousel-caption   ">
+
+                    <p class="legend">EŞSİZ MÜŞTERİ</p>
+                    <p class="display-4  lead"> HİZMETİ</p>
+                    <h2 class="lead blockquote">Hayalinizdeki Yatırımı Yapın...</h2>
+
+                    <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal"
+                        href="#contact">
+                        Hemen İletişim
+                        Kur
+                    </a>
+                    <!-- Portfolio Grid
+                    <section class="page-section bg-light" id="portfolio">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6 mb-4">
+
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Hemen Bİlgİ Al
+                    </a>
+                    -->
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item"
+                style="background-image: url('../static/assets/img/header/city-1283801.jpeg2000')">
+                <div class="carousel-caption d-md-block">
+
+                    <p class="legend">GÜVENİLİR EMLAK</p>
+                    <p class="display-4  lead"> DANIŞMANI</p>
+                    <h2 class="lead blockquote">Hayalinizdeki Yatırımı Yapın...</h2>
+                    <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal"
+                        href="#contact">
+                        Hemen İletişim
+                        Kur
+                    </a>
+
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item"
+                style="background-image: url('../static/assets/img/header/villa-1209148.jpeg2000')">
+                <div class="carousel-caption  d-md-block">
+                    <p class="legend">EN İYİ GAYRİMENKUL </p>
+                    <p class="display-4  lead mr-2">YATIRIMLARI</p>
+                    <h2 class="lead blockquote">Hayalinizdeki Yatırımı Yapın...</h2>
+                    <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal"
+                        href="#contact">
+                        Hemen İletişim
+                        Kur
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="carousel-item"
+                style="background-image: url('../static/assets/img/header/agriculture-1867212.jpeg2000')">
+                <div class="carousel-caption  d-md-block">
+                    <p class="legend">OLAĞAN ÜSTÜ</p>
+                    <p class="display-4  lead">PAZARLAMA</p>
+                    <h2 class="lead blockquote">Hayalinizdeki Yatırımı Yapın...</h2>
+                    <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal"
+                        href="#contact">
+                        Hemen İletişim
+                        Kur
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item"
+                style="background-image: url('../static/assets/img/header/sky-3122143.jpeg2000')">
+                <div class="carousel-caption  d-md-block">
+                    <p class="legend">MUHTEŞEM</p>
+                    <p class="display-4  lead">SONUÇLAR</p>
+                    <h2 class="lead blockquote">Hayalinizdeki Yatırımı Yapın...</h2>
+                    <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal"
+                        href="#contact">
+                        Hemen İletişim
+                        Kur
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item"
+                style="background-image: url('../static/assets/img/header/hong-kong-1990268.jpeg2000')">
+                <div class="carousel-caption  d-md-block">
+                    <p class="legend">BAŞARILI BİR</p>
+                    <p class="display-4  lead">EMLAKÇI</p>
+                    <h2 class="lead blockquote">Hayalinizdeki Yatırımı Yapın...</h2>
+                    <a class="portfolio-link btn btn-primary btn-xl text-uppercase " data-toggle="modal"
+                        href="#contact">
+                        Hemen İletişim
+                        Kur
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+
+
+{% if messages %}
+
+{% for message in messages %}
+{% if message.tags == "info" %}
+<div class="alert alert-danger">{{ message }}</div>
+{% else %}
+<div class="alert alert-{{ message.tags }}">{{ message }}</div>
+
+{% endif %}
+
+
+{% endfor %}
+
+{% endif %}
+
+<!-- About-->
+<div id="about" class="paddsection mt-5">
+    <div class="container">
+
+        <div class="row justify-content-between ">
+
+            <div class="col-lg-6">
+                <div class="about-descr">
+                    <div class="text-center">
+
+                        <h5 class="section-subheading ">HAKAN TAK İLE TANIŞIN;</h5>
+                    </div>
+
+                    <p class="separator text-muted ">
+
+                        ‘Yorulmak bilmeyen iş ahlakı sayesinde 1998 yılında başlayan iş hayatına, 2005 yılından itibaren
+                        yeni bir enerji ile emlak sektöründe Türkiye‘nin birçok yerinde pazarladığı gayrimenkuller ile
+                        hizmet vermeye devam eden Hakan, eşsiz bir pazarlama ve birinci sınıf hizmetler sunar. Kurduğu
+                        pazarlama ağı ve başarılı gayrimenkul danışmanını örnekleyen yapısıyla sektörde ki birçok alıcı
+                        ve satıcıya katkıda bulunmuştur. Hakan müşterilerinin hayal ettiği yatırımları ustaca yöntemler
+                        ve analizlerle gerçeğe çevirerek emlak pazarında alıcı ve satıcıya kazandıran gayrimenkul
+                        danışmanı olmayı bilmiştir.’
+                    </p>
+                    <a style="float: right ;" class="btn btn-secondary  btn-xl text-uppercase js-scroll-trigger mb-2"
+                        href="{% url 'about'  %}">Devamını oku</a>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="div-img-bg ">
+                    <div class="about-img">
+                        <img style="width: 100%" src="{% static 'assets/img/hakantak-1.jpeg2000' %}" class="img-responsive"
+                            alt="me">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div><!-- End About Section -->
+
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">referanslarımız</h2>
+            <h3 class="section-subheading text-muted">Müşterilerimizin söylediklerini okuyun...</h3>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4">Simon Yakup P.</h4>
+                    <p class="text-muted">Hakan bey ve ekibi işlem öncesi ve sonrası bizi çok iyi ağırladılar. Çok iyi
+                        bir danışman, çok iyi bir ekip, tebrik ediyorum. Satış işlemimizi de en kısa zaman da hiç bir
+                        sorun ve prosedür ile uğraştırmadan halletti. Teşekkür ederiz.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="team-member">
+
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4">Melek Özgür P.</h4>
+                    <p class="text-muted">Hakan bey’ in her zaman iletişimde olması ve süreci net bir şekilde yönetmesi
+                        çok iyiydi. Sorularımıza sabırlı ve açıklayıcı bir şekilde dönüş yaptınız. Size çok teşekkür
+                        ederiz.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> H.Çiğdem A. </h4>
+                    <p class="text-muted"> İlk günden son güne kadar dikkati, takibi, nezaketi ve dürüstlüğü nedeniyle
+                        Hakan Tak 'a çok teşekkür ediyorum.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Barış T. </h4>
+                    <p class="text-muted"> Hakan bey, hem yatırım hem de gayrimenkul işlerimizde güvendiğim
+                        danışmanımız, kendisine çok teşekkür eder, başarılarının devamını dilerim.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Gülfer B. </h4>
+                    <p class="text-muted">Hakan bey ile birlikte gerçekleştirdiğimiz ikinci işlem oldu. Son derece
+                        profesyonel, işinin ehli aynı zamanda da güven verici yaklaşım ve ifadeleri mevcut bir danışman.
+                        Başarılarının devamını dilerim. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Çağrı Ç. </h4>
+                    <p class="text-muted">Hakan bey ile işlemlerimiz hızlı sonuca gidiyor ve iş hâkimiyeti ile çok fazla
+                        güven veriyor. Diğer mülklerimizde de daha önce olduğu gibi beraber çalışmaya devam edeceğiz.
+                        Teşekkür ederim. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Neşe T. </h4>
+                    <p class="text-muted">Hakan bey’ in iletişimini, diyaloğunu ve disiplinini çok takdir ettim. İş
+                        takibi ve zamanını doğru kullanma yeteneği genç olmasına rağmen örnek gösterilebilir. Daire
+                        satışımız sonlandı fakat diğer çalışmalara yol açıldı. Kendisine çok teşekkür ediyoruz.
+                        Başarıları daim olsun. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Yang G. </h4>
+                    <p class="text-muted">Hakan was very helpful from the beginning to the end of the whole process. I
+                        would like to thank him for his efforts. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Barış Mert T. </h4>
+                    <p class="text-muted">Hakan beyi, satış sürecimizi stressiz yönettiği ve çok hızlı gerçekleştirdiği
+                        için tebrik ederim. Bundan sonraki çalışmalarımızın tamamında destek almaya devam edeceğiz.
+                        Teşekkürler
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Alida R. </h4>
+                    <p class="text-muted"> Kendi başıma aradım durdum ama keşke baştan danışsaymışım. Tam istediğim gibi
+                        hatta daha iyi bir eve kavuşmama yardımcı oldu. Hakan bey‘ e Teşekkür ederim. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4">Ali İhsan Y. </h4>
+                    <p class="text-muted"> Hakan bey rahatlıkla arayabildiğim emeğini esirgemeyen güvenebildiğim ve
+                        çözüm üretme becerisi yüksek bir kişidir. Bundan sonraki dönemlerde de satın alma, satış ya da
+                        kiralama işlemlerimde birlikte çalışmaktan memnuniyet duyacağım, kendisine teşekkür ederim.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Dursun E. </h4>
+                    <p class="text-muted"> Satış sürecinde ve sonrası son derece etkili ve başarılı biri olan Hakan Bey
+                        ile 2. satışımızda çok hızlı bitti. Başarılarının devamını dileriz.
+                        Saygılarımızla
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Nevzat K. </h4>
+                    <p class="text-muted"> Hakan Bey büyük bir sabırla ve inançla devir işlemimi kısa sürede sonuca
+                        ulaştırdı. Kendisine çok teşekkür ederim. Böyle eğitimli gençlerin bu işe gönül vermesi sektör
+                        açısından oldukça sevindirici. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4"> Filiz B.</h4>
+                    <p class="text-muted">Hakan bey ne istediğimi doğru ve hızlı algılayarak net cevaplar veren,
+                        iletişimi ve geri dönüşleri oldukça hızlı biri. Doğru bilgilendirmesinden dolayı işlemimiz
+                        sonuçlandı, kendisine çok teşekkür ederim. Aldığım hizmetten çok memnun kaldım. </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="far fa-comment-dots fa-lg"></i>
+                    <!-- <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="" />-->
+                    <h4 class="mb-4">Şahnaz R.</h4>
+                    <p class="text-muted">Hakan bey’ in iş bilgisi, güvenilirliği, ilgisi o kadar yüksek ki satış ya da
+                        alım yapmadan kendisine danışılması gerektiğini hissettiriyor. Ben böyle danışmanlar tanıdıkça
+                        çok mutlu oluyorum. Her zaman arkadaşlığımı sürdüreceğim. Ayrıca satış işleminde bana her konuda
+                        yardımcı olduğu için kendisine çok teşekkür ediyorum. </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 ml-auto mr-auto  ">
+
+
+                        <p class="large text-muted">Daha fazla müşteri yorumu ve görüşleri için
+                            <a href="https://www.remax.com.tr/gayrimenkul-danisman-girisimci/c656/hakan-tak"
+                                target="_blank">buraya</a>
+                            tıklayınız.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--blog-->
+<section class="page-section bg-light mb-0 pb-0" id="team">
+    <div class="container ">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Blog</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+    </div>
+
+    {% if  articles%}
+    {% for article in articles  %}
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-9 col-md-10 mx-auto">
+                <div class="post-preview">
+
+                    <a href="{% url 'detail' article.id %}">
+                        <h2 class="section-heading text-uppercase">
+                            {{article.title}}
+                        </h2>
+                        <h3 class="section-subheading text-muted">
+                            {{article.content|safe|truncatewords:10}}
+                        </h3>
+
+                        <hr>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-10 ">
+                {% if  article.article_image %}
+                <a href="{% url 'detail' article.id %}"><img class="img-fluid rounded"
+                        src="{{article.article_image.url}}" alt=""></a>
+
+
+                {% endif %}
+            </div>
+
+            <div class="col-lg-5 col-md-10 ">
+                <p class="post-meta">
+                    {{article.author}} tarafından {{article.created_date}} tarihinde eklendi</p>
+
+
+                <a style="float: right;" class="btn  btn-secondary  btn-xl text-uppercase js-scroll-trigger "
+                    href="{% url 'detail' article.id %}">Devamını
+                    oku</a>
+                </a>
+
+
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="alert alert-danger">
+        Herhangi bir makale bulunmuyor
+
+    </div>
+    {% endif %}
+    <div class="container mt-5 pt-5">
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-9 col-md-10 mx-auto">
+                <div class="post-preview">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="display-4"></h2>
+                        <a class="text-uppercase js-scroll-trigger" href="{% url 'blog'  %}">Diğer Makaleler >>> </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--blog-->
+
+
+
+<!-- Portfolio Modals-->
+<!-- Modal 1-->
+<div class="portfolio-modal modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <section class="page-section" id="contact">
+                <div class="container">
+                    <div class="close-modal" data-dismiss="modal"><img style="height: 100%;"
+                            src="{% static 'assets/img/exit.jpeg2000' %}" alt="Close modal" />
+                    </div>
+                    <!-- Contact Section Heading-->
+                    <p class="section-heading text-light">Hakan Tak</p>
+                    <h3 class="section-subheading text-light">Sorunuz var mı? Sizden duymak isteriz. </h3>
+                    <h2 class="section-heading text-uppercase">Bİze Yazın</h2>
+                    <h3 class="section-subheading text-light">Siz bir mesaj gönderin hemen iletişime geçelim. </h3>
+                    <!-- Contact Section Form-->
+
+
+                    <div class="container mb-5">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-10 ">
+
+                                <div class="row">
+                                    <div class="mx-auto">
+                                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+
+
+
+                                        <form method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+                                            {% csrf_token %}
+
+                                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                                {{form.name}}
+
+                                                <label for="{{ form.name.label }}">İsim</label>
+
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                                {{form.phone}}
+                                                <label for="{{ form.phone.label }}">Telefon Numarası</label>
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                                {{form.email}}
+                                                <label for="{{ form.email.label }}">Email Addresi</label>
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                            <div class="form-group floating-label-form-group controls mb-0 h-50">
+                                                {{form.subject}}
+                                                <label>Subject</label>
+
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+
+                                            <div class="form-group floating-label-form-group controls mb-0 h-80 ">
+
+                                                {{form.message}}
+
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+
+                                            <br />
+                                            <div id="success"></div>
+                                            <div class="form-group"><button class="btn btn-primary "
+                                                    id="sendMessageButton" type="submit">Formu Gönder</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-10 mt-10">
+                                <div class="container">
+                                    <div class="text-center">
+
+                                        <p class="section-heading ">TELEFON : +90 532 317 4780</p>
+
+                                        <h3 class="section-subheading text-light">ADRES : Nisbetiye Mahallesi Aytar
+                                            Caddesi No: 29/A Levent / Beşiktaş / İSTANBUL / TÜRKİYE</h3>
+
+
+                                        <div class="row align-items-center">
+                                            <div class="container">
+                                                <a class="mx-2 icon" href="https://twitter.com/hkntak"><i
+                                                        class="fab fa-twitter fa-2x"></i></a>
+                                                <a class="mx-2 icon" href="https://www.facebook.com/hakantakemlak/"
+                                                    target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                                                <a class="mx-2 icon"
+                                                    href="https://www.linkedin.com/in/hakan-tak-0a699742/"
+                                                    target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                                                <a class="mx-2 icon" href="https://wa.me/905323174780"
+                                                    target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                                <a class="mx-2 icon" href="https://www.instagram.com/hkntak/?hl=tr"
+                                                    target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                                <a class="mx-2 icon"
+                                                    href="https://www.youtube.com/channel/UCzQgjVoNs6cMvw_4O5TIKOg?view_as=subscriber"
+                                                    target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-lg-9 col-md-10 mx-auto">
+                                <div class="post-preview">
+                                    <div class="d-md-block">
+                                        <h2 class="display-4"></h2>
+
+
+                                        <div class="form-group">
+
+                                            <button class="btn btn-primary " data-dismiss="modal" type="button">
+                                                <i class="fas fa-times mr-1"></i>
+                                                KAPAT
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--Video-->
+<div class="bg-light">
+    <section class="page-section pt-0">
+        <div class="container">
+            <div class="container mb-5">
+                <div class="text-center ">
+                    <h2 class="section-heading text-uppercase">Vİdeolar</h2>
+                    <h3 class="section-subheading text-muted">Geleceğe bizimle yatırım yapın.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-10 mt-5 ">
+                        <div class="container">
+
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mKWyQsHVHmw"
+                                    allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                                    msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                    webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-10 mt-5 ">
+                        <div class="container">
+
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0Fa8CM0wvwU"
+                                    allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                                    msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                    webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+{% endblock body %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+
+<section class="page-section" id="contact">
+    <div class="container mt-10">
+    </div>
+    <!-- Contact Section Heading-->
+    <p class="section-heading text-center text-light">Hakan Tak</p>
+    <h3 class="section-subheading  text-center text-light">Sorunuz var mı? Sizden duymak isteriz.</h3>
+    <h2 class="section-heading  text-center text-uppercase">Bİze Yazın</h2>
+    <h3 class="section-subheading  text-center text-light">Siz bir mesaj gönderin hemen iletişime geçelim. </h3>
+    <!-- Contact Section Form-->
+
+
+    <div class="container mb-5">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-10 ">
+
+                <div class="row">
+                    <div class="mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+
+
+                        <form method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+                            {% csrf_token %}
+
+                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                {{form.name}}
+
+                                <label for="{{ form.name.label }}">İsim</label>
+
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                {{form.phone}}
+                                <label for="{{ form.phone.label }}">Telefon Numarası</label>
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="form-group floating-label-form-group controls mb-0  h-50">
+                                {{form.email}}
+                                <label for="{{ form.email.label }}">Email Addresi</label>
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="form-group floating-label-form-group controls mb-0 h-50">
+                                {{form.subject}}
+                                <label>Subject</label>
+
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+
+                            <div class="form-group floating-label-form-group controls mb-0 h-80 ">
+
+                                {{form.message}}
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+
+                            <br />
+                            <div id="success"></div>
+                            <div class="form-group"><button class="btn btn-primary " id="sendMessageButton"
+                                    type="submit">Formu Gönder</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-10 mt-10">
+                <div class="container">
+                    <div class="text-center">
+
+                        <p class="section-heading ">TELEFON : +90 532 317 4780</p>
+
+                        <h3 class="section-subheading text-light">ADRES : Nisbetiye Mahallesi Aytar
+                            Caddesi No: 29/A Levent / Beşiktaş / İSTANBUL / TÜRKİYE</h3>
+
+                        <div class="row align-items-center">
+                            <div class="container">
+                                <a class="mx-2 icon" href="https://twitter.com/hkntak" target="_blank"><i
+                                        class="fab fa-twitter fa-2x"></i></a>
+                                <a class="mx-2 icon" href="https://www.facebook.com/hakantakemlak/" target="_blank"><i
+                                        class="fab fa-facebook-f fa-2x"></i></a>
+                                <a class="mx-2 icon" href="https://www.linkedin.com/in/hakan-tak-0a699742/"
+                                    target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                                <a class="mx-2 icon" href="https://wa.me/905323174780" target="_blank"><i
+                                        class="fab fa-whatsapp fa-2x"></i></a>
+                                <a class="mx-2 icon" href="https://www.instagram.com/hkntak/?hl=tr" target="_blank"><i
+                                        class="fab fa-instagram fa-2x"></i></a>
+                                <a class="mx-2 icon"
+                                    href="https://www.youtube.com/channel/UCzQgjVoNs6cMvw_4O5TIKOg?view_as=subscriber"
+                                    target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+</section>
+
+
+{% endblock body %}
