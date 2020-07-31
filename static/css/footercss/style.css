@@ -1,0 +1,73 @@
+/*fark-4*/
+.badge-black {
+    color: #fff;
+    background-color: #000000;
+}
+
+a.badge-black:hover,
+a.badge-black:focus {
+    color: #fff;
+    background-color: black;
+}
+
+a.badge-black:focus,
+a.badge-black.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+/*fark-1*/
+
+
+
+
+/*fark-6*/
+.bg-black {
+    background-color: #000000 !important;
+}
+
+a.bg-black:hover,
+a.bg-black:focus,
+button.bg-black:hover,
+button.bg-black:focus {
+    background-color: black !important;
+}
+
+/*fark-1*/
+
+
+/*fark-7*/
+.text-black {
+    color: #000000 !important;
+}
+
+a.text-black:hover,
+a.text-black:focus {
+    color: black !important;
+}
+
+@media (min-width: 992px) {
+
+
+    .about-section {
+        padding-top: 10rem;
+        background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+
+
+
+    /* contact */
+
+    .contact-section .card {
+        border: 0;
+        border-bottom: 0.25rem solid #d2b66c;
+    }
+
+
+    .contact-section .card hr {
+        border-color: #d2b66c;
+        border-width: 0.25rem;
+        width: 3rem;
+    }
+}
