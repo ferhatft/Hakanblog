@@ -22,6 +22,9 @@ from contact import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
+    
+    path('gizlilik-politikası/', views.gizlilikpolitikasiView , name="gpolitikasi"),
+    path('kullanıcı-sözleşmesi/', views.kullanimşartlariView , name="ksözleşmesi"),
     path('hakkimda/', views.aboutView, name="about"),
     path('emlak-bilgisi-al/', include("contact.urls")),
     path('sikca-sorulan-sorular/', include("sorular.urls")),

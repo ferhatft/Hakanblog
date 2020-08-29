@@ -43,3 +43,11 @@ def emailView(request):
 
 def aboutView(request):
      return render(request, "about.html")   
+
+     
+def kullanimşartlariView(request):
+     return render(request, "kullanimşartlari.html")   
+
+
+def gizlilikpolitikasiView(request):
+     return render(request, "gizlilikpolitikasi.html")   
