@@ -1,6 +1,6 @@
 # Ferhat Tuğrul
 
-Bu proje, 2022 yılında geliştirilmiş olan ancak şu anda aktif olarak kullanılmayan bir kurumsal şirketin web sitesidir. Bu web sitesi, şirketin ürün ve hizmetlerini tanıtmak, müşterilere erişim sağlamak ve şirketin dijital varlığını güçlendirmek amacıyla oluşturulmuştur.
+Bu proje, 2020 yılında geliştirilmiş olan ancak şu anda aktif olarak kullanılmayan bir kurumsal şirketin web sitesidir. Bu web sitesi, şirketin ürün ve hizmetlerini tanıtmak, müşterilere erişim sağlamak ve şirketin dijital varlığını güçlendirmek amacıyla oluşturulmuştur.
 ## Kurulum
 
 Projenin çalışması için aşağıdaki adımları izleyin.
